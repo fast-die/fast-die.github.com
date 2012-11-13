@@ -1,0 +1,87 @@
+﻿/*
+ #------------------------------------------------------------------------
+ # elvesocial - July 2010 UPDATE - ver. 2.0.2  (for Joomla 1.5)
+ #
+ # Copyright (C) 2007-2010 Gavick.com. All Rights Reserved.
+ # License: Copyrighted Commercial Software
+ # Website: http://www.gavick.com
+ # Support: support@gavick.com   
+ #------------------------------------------------------------------------ 
+ # Based on T3 Framework
+ #------------------------------------------------------------------------
+ # Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ # @license - GNU/GPL, http://www.gnu.org/copyleft/gpl.html
+ # Author: J.O.O.M Solutions Co., Ltd
+ # Websites: http://www.joomlart.com - http://www.joomlancers.com
+ #------------------------------------------------------------------------
+ */
+
+.gk-megamenu { margin: 0; padding: 0; }
+.gk-megamenu a { text-decoration: none; }
+/* 
+ * lv - 0
+ */
+
+.gk-megamenu ul.level0 { float: left; }
+.gk-megamenu ul.level0 li.mega { display: block; float: left;  }
+.gk-megamenu ul.level0>li.mega>a.mega { display: block; }
+.gk-megamenu ul.level0>li.mega>a.mega span { display: block;}
+.gk-megamenu ul.level0>li.mega .has-image { padding: 0 0 0 16px!important; display: block; background-repeat: no-repeat; background-position: left 15px; }
+.gk-megamenu ul.level0 li.mega span.menu-title { display: block; }
+.gk-megamenu ul.level0 li.mega a img { float: left; padding-right: 5px; }
+.gk-megamenu ul.level0>li.active a,  ul.level0>li.active:hover a { }
+/* 
+ * lv - 1 and below
+ */
+
+.gk-megamenu li.mega .childcontent { display: block; height: auto; position: absolute; }
+ul.level0>li>.childcontent { margin:8px 0 0 -20px; }
+.gk-megamenu li.mega .childcontent,  .gk-megamenu li.haschild-over li.mega .childcontent,  .gk-megamenu li.mega li.haschild-over li.mega .childcontent,  .gk-megamenu li.mega li.mega li.haschild-over li.mega .childcontent,  .gk-megamenu li.mega li.mega li.mega li.haschild-over li.mega .childcontent,  .gk-megamenu li.mega li.mega li.mega li.mega li.haschild-over li.mega .childcontent { left: -999em; /*hide the menu*/ }
+.gk-megamenu li.haschild-over .childcontent,  .gk-megamenu li.mega li.haschild-over .childcontent,  .gk-megamenu li.mega li.mega li.haschild-over .childcontent,  .gk-megamenu li.mega li.mega li.mega li.haschild-over .childcontent,  .gk-megamenu li.mega li.mega li.mega li.mega li.haschild-over .childcontent,  .gk-megamenu li.mega li.mega li.mega li.mega li.mega li.haschild-over .childcontent { left: auto; /*show on parent:hover*/ }
+.gk-megamenu li.mega .right,  .gk-megamenu li.haschild-over li.mega .right,  .gk-megamenu li.mega li.haschild-over li.mega .right,  .gk-megamenu li.mega li.mega li.haschild-over li.mega .right,  .gk-megamenu li.mega li.mega li.mega li.haschild-over li.mega .right,  .gk-megamenu li.mega li.mega li.mega li.mega li.haschild-over li.mega .right { right: auto; /*hide the menu*/ }
+.gk-megamenu li.haschild-over .right { right: 0; /*show on parent:hover*/ }
+.gk-megamenu li.mega li.haschild-over .right,  .gk-megamenu li.mega li.mega li.haschild-over .right,  .gk-megamenu li.mega li.mega li.mega li.haschild-over .right,  .gk-megamenu li.mega li.mega li.mega li.mega li.haschild-over .right,  .gk-megamenu li.mega li.mega li.mega li.mega li.mega li.haschild-over .right { right: 12em; /*show on parent:hover*/ }
+.gk-megamenu ul.level1 li.mega { float: none; }
+.gk-megamenu ul.level1 .childcontent { margin: -2em 0 0 166px; }
+/* 
+ * Columns
+ */
+
+.gk-megamenu .megacol { float: left; }
+.gk-megamenu .megacol:first-child>ul { padding:0; }
+.gk-megamenu .megacol>ul{ padding:0 0 0 16px; }
+/* 
+ * Styling
+ */
+
+.gk-megamenu ul.level1 li.mega { }
+.gk-megamenu ul.level1 li.first { }
+.gk-megamenu ul.level1 li.mega:first-child { margin:0; }
+.gk-megamenu ul.level1 li.mega a.mega span.menu-title { background: none; padding: 0; height:32px; line-height:32px;}
+.gk-megamenu ul.level1 li.haschild { padding: 0; }
+.gk-megamenu ul.level1 li.over, ul.level1 li.haschild-over { }
+.gk-megamenu ul.level1 li.group { background: none; }
+/* 
+ * CHILD CONTENT
+ */
+
+.gk-megamenu .childcontent { z-index: 999; }
+.gk-megamenu .childcontent .gk-moduletable .gk-box-ct { padding: 0 5px; }
+.gk-megamenu .childcontent .gk-moduletable ul:first-child { margin-top: 0 !important; }
+.gk-megamenu .childcontent .gk-moduletable li { }
+/* 
+ * Grouped
+ */
+
+.gk-megamenu .group { }
+.gk-megamenu .group-title {  }
+.gk-megamenu .group-title a, .group-title a:hover{background:none!important; }
+.gk-megamenu .group-content .gk-moduletable,  .group-content ul.megamenu { margin: 10px; /* Group-content's gutter*/ }
+/* 
+ * reset
+ */
+
+.gk-megamenu .childcontent ul.megamenu .gk-moduletable { padding: 0; }
+.gk-megamenu .childcontent ul.megamenu .gk-moduletable h3 { margin-left: 0; margin-right: 0; }
+.group .moduletable{padding-left:10px!important;}
+.group .moduletable h3{margin-left:0px!important;}

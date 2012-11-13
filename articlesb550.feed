@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/components/com_jcomments/tpl/default/style.css?v=12" type="text/css"?>
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="ru-ru">
+	<title type="text">Полезные статьи</title>
+	<subtitle type="text">Таблетка Fast Die: как гарантированно покончить с собой. Легкий способ уйти из жизни!</subtitle>
+	<link rel="alternate" type="text/html" href="http://fast-die.kiev.ua"/>
+	<id>http://fast-die.kiev.ua/articles.feed</id>
+	<updated>2012-11-13T10:55:12Z</updated>
+	<generator uri="http://joomla.org" version="1.5">Joomla! 1.5 - Open Source Content Management</generator>
+<link rel="self" type="application/atom+xml" href="http://fast-die.kiev.ua/articles.feed?type=atom" />
+	<entry>
+		<title>Как завязать петлю для повешения</title>
+		<link rel="alternate" type="text/html" href="http://fast-die.kiev.ua/articles/3-how-to-tie-a-loop-for-hanging.html"/>
+		<published>2011-02-14T15:07:17Z</published>
+		<updated>2011-02-14T15:07:17Z</updated>
+		<id>http://fast-die.kiev.ua/articles/3-how-to-tie-a-loop-for-hanging.html</id>
+		<author>
+			<name>Тех. поддержка</name>
+		<email>alex.lysenko@mail.ru</email>
+		</author>
+		<summary type="html">&lt;p&gt;&lt;img src=&quot;http://fast-die.kiev.ua/images/stories/hangingloop.jpg&quot; border=&quot;0&quot; alt=&quot;Затягивающаяся удавка&quot; title=&quot;Как завязать петлю для повешения&quot; /&gt;&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;http://fast-die.kiev.ua/images/stories/hangingloop.jpg&quot; border=&quot;0&quot; alt=&quot;Затягивающаяся удавка&quot; title=&quot;Как завязать петлю для повешения&quot; /&gt;&lt;/p&gt;</content>
+	</entry>
+</feed>

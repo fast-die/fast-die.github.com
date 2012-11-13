@@ -1,0 +1,433 @@
+﻿/*
+ #------------------------------------------------------------------------
+ # elvesocial - July 2010 UPDATE - ver. 2.0.2  (for Joomla 1.5)
+ #
+ # Copyright (C) 2007-2010 Gavick.com. All Rights Reserved.
+ # License: Copyrighted Commercial Software
+ # Website: http://www.gavick.com
+ # Support: support@gavick.com   
+ #------------------------------------------------------------------------ 
+ # Based on T3 Framework
+ #------------------------------------------------------------------------
+ # Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ # @license - GNU/GPL, http://www.gnu.org/copyleft/gpl.html
+ # Author: J.O.O.M Solutions Co., Ltd
+ # Websites: http://www.joomlart.com - http://www.joomlancers.com
+ #------------------------------------------------------------------------
+ */
+/*
+ * Menu
+ */
+.gk_menu, 
+.gk-megamenu, 
+.gk-megamenu>li, 
+.gk-megamenu>ul>li, 
+.gk-megamenu>li>a, 
+.gk-megamenu>ul>li>a, 
+.gk_menu>li, 
+.gk_menu>ul>li, 
+.gk_menu>li>a, 
+.gk_menu>ul>li>a{padding:0; margin:0; border:0}
+.gk_menu>ul, 
+.gk-megamenu{}
+#gk-splitmenu, 
+#gksdl-mainnav{overflow:hidden;}
+.gk-megamenu ul.level0>li, 
+.gk_menu>li, 
+.gk_menu>ul>li{padding:7px 8px; position:relative;}
+.gk_menu li.active a{} 
+.gk-megamenu ul.level0>li>a .gk_menu>li>a, 
+.gk_menu>ul>li>a{overflow:hidden}
+.gk-megamenu ul.level0>li>a>span, 
+.gk_menu>li>a>span, 
+.gk_menu>ul>li>a>span{display:block; height:13px; line-height:13px; font-weight:normal; font-size:100%;}
+.gk-megamenu ul.level0>li>a>span.menu-desc, 
+.gk_menu>li>a>span.menu-desc, 
+.gk_menu>ul>li>a>span.menu-desc{height:14px; line-height:14px; color:#a5c0dc}
+.gk-megamenu ul.level0>li li span.menu-desc, 
+.gk_menu>li li span.menu-desc, 
+.gk_menu>ul>li li span.menu-desc{display:none!important}
+ul.level0>li.mega>.mega>span.menu-desc, 
+.gk_menu>li>a>span.menu-desc, 
+.gk_menu>ul>li>a>span.menu-desc{display:block; background:none!important; font-weight:normal; font-size:100%}
+
+.gk_menu li ul{background:url(../images/style1/submenu_bg.png) no-repeat 0 bottom; padding: 0 8px 4px !important; max-width:180px; margin-top:12px !important; margin-left:-15px !important;}
+.gk_menu li ul li ul {-moz-border-radius:5px;-webkit-border-radius:5px; padding:4px 8px 4px !important; }
+
+.gk_menu li li>ul{margin-top:-25px!important; margin-left:188px !important;}
+#gksdl-subnav ul{width:auto}
+.gk_menu li ul li{border:0 none !important;height:32px !important;line-height:32px !important;}
+.gk_menu li ul span{display:block}
+
+.gk_menu li ul a{border:0!important;border-top:1px #72aaca solid !important; display:block!important; height:32px!important; line-height:32px!important; font-size:100%!important;}
+.gk_menu li:first-child>a{border-top:0 !important;} /**/
+
+.gk_menu li ul a:hover{background-position:right bottom!important; color:#f19120!important}
+.gk-megamenu>ul.level0>li:hover, 
+.gk-megamenu>ul.level0>li.active, 
+.gk_menu>li:hover, 
+.gk_menu>li.active, 
+.gk_menu>ul>li:hover, 
+.gk_menu>ul>li.active{position:relative}
+.gk_menu li a.active, 
+.gk_menu li a.active:hover, 
+.gk_menu li a.active:active, 
+.gk_menu li a.active:focus, 
+.gk_menu ul li a.active, 
+.gk_menu ul li a.active:hover, 
+.gk_menu ul li a.active:active, 
+.gk_menu ul li a.active:focus{background:none !important; color:#f19120; font-weight:bold}
+
+/* only megamenu */
+.gk-megamenu a.mega{color:#fff}
+.gk-megamenu a.mega:hover{color:#f19120}
+.gk-megamenu ul.level1 li.mega a.mega{border-top:1px solid #72AACA !important;color:#FFFFFF;display:block;font-size:100%;height:28px;line-height:28px;margin:0;padding:0 8px;width:150px;}
+.gk-megamenu ul.level1 li.mega:first-child>a.mega{border-top: 0px !important;}
+.gk-megamenu ul.level1 li.mega a.mega:hover{background-position:right bottom; color:#f19120}
+.gk-megamenu .childcontent-inner-wrap{color:#fff!important; border:none!important; background:url('../images/style1/submenu_bg.png') no-repeat 0 bottom; margin:4px 0 !important;}
+.gk-megamenu .childcontent-inner{padding:0 0 4px 14px;}
+.gk-megamenu .childcontent-inner-wrap ul li .childcontent-inner-wrap { -moz-border-radius:5px!important; -webkit-border-radius:5px!important; color:#fff!important; border:none!important;background:url('../images/style1/submenu_bg.png') no-repeat 0 bottom;padding:0!important;width:196px !important}
+.gk-megamenu .childcontent-inner-wrap ul li .childcontent-inner{padding:8px 14px 0 14px !important;}
+
+.gk-megamenu .childcontent .gk-moduletable a:hover, 
+.gk-megamenu .childcontent .gk-moduletable a:focus, 
+.gk-megamenu .childcontent .gk-moduletable a:active{color:red; text-decoration:none}
+.gk-megamenu .childcontent .gk-moduletable a{color:#fff; text-decoration:none; border-bottom:1px dotted #ccc}
+.gk-megamenu .childcontent .gk-moduletable{color:#fff; border-bottom:0; line-height:1.5; margin:10px 0; padding:0}
+.gk-megamenu .childcontent .gk-moduletable h3{background:none; color:#fff; margin-left:10px; margin-right:10px; text-indent:5px; text-transform:none}
+.gk-megamenu .group .moduletable h3, 
+.gk-megamenu .group-title .menu-title{color:#fff; height:25px; line-height:25px; margin:0 3px; padding:0 8px!important;}
+.gk-megamenu .group .moduletable h3{color:#fff; margin:10px 9px;}
+.gk-megamenu .group-title .menu-desc{color:#fff; font-size:100%; padding-left:0 !important; height:10px; line-height:15px}
+.gk-megamenu .group .moduletable h3{background:none; font-size:100%; padding:10px 0}
+
+/* 
+ * Main Nav
+ */
+#gk-mainnav{line-height:1; position:relative; z-index:99; font-size:100%; float:right;margin-left:338px;margin-top:42px;position:absolute;width:660px;}
+
+/* 
+ * Sub Nav
+ */
+#gk-subnav {float:right;margin-left:328px !important;margin-top:72px !important;position:absolute;width:650px;height:32px; z-index:99; background:transparent; margin:0 4px; font-size:100%; color:#fff}
+#gk-subnav .menu-desc{display:none!important}
+#gk-subnav .main{line-height:1; z-index:100}
+#gk-subnav ul{background:none; overflow:hidden; height:32px; line-height:32px; padding:0 0 0 8px}
+#gk-subnav ul.active{background:none}
+#gk-subnav li{display:block; float:left; padding:0 0 0 11px; height:32px;line-height:32px;}
+#gk-subnav ul li a span{border-left:1px solid #fff; padding-left:10px}
+#gk-subnav ul li:first-child a span{border-left:none; padding-left:0}
+#gk-subnav li.first-item{border-left:0; background:none!important}
+#gk-subnav ul li a{color:#fff; display:block; text-decoration:none;}
+#gk-subnav ul li.active a, 
+#gk-subnav ul li.active a:hover, 
+#gk-subnav ul li.active a:active, 
+#gk-subnav ul li.active a:focus{color:#fff!important}
+#gk-subnav ul ul li{font-size:100%}
+#gk-subnav ul.active li a{color:#fff}
+#gk-subnav ul.active li a:hover, 
+ul#gk-subnav>li a:hover, 
+#gk-subnav ul li a:hover{color:#FBAC29}
+#gk-subnav ul li.empty{visibility:hidden}
+/* 
+ * Sub Nav (lv2)
+ */
+#gk-subnav ul ul li a span{border:none; padding-left:6px}
+#gk-subnav ul li ul{display:block; height:auto; left:-999em; padding:0; position:absolute; width:200px}
+#gk-subnav ul li.hover ul{display:block; height:auto; left:auto; position:absolute; margin-top:5px; margin-left:5px}
+#gk-subnav ul li.haschild a:hover{background:none}
+#gk-subnav ul li.haschild li a, 
+#gk-subnav ul li.hover li a{background:none; padding-right:0}
+#gk-subnav ul li ul{color:#fff; border:none; background:url('../images/style1/submenu_bg.png') no-repeat 0 bottom; ; padding:4px 8px; font-size:100%!important;-moz-border-radius:5px; -webkit-border-radius:5px; max-width:180px}
+#gk-subnav ul li ul li{border:none; display:block; float:none; overflow:hidden; padding:0; text-align:left}
+#gk-subnav ul li li a span{padding-left:6px!important}
+#gk-subnav ul li ul li a{border:0!important; border-top:1px #72aaca solid !important; color:#fff!important; display:block!important; height:32px!important; line-height:32px!important; font-size:100%!important;}
+#gk-subnav ul li ul li:first-child a{border:0 !important}
+#gk-subnav ul li ul li a:hover{color:#f19120 !important}
+/*
+ * Popups
+ */
+.gk_popup{position:absolute; right:0; margin:38px 0 0 0; z-index:100; display:none; -moz-box-shadow:0 3px 10px #777; -webkit-box-shadow:0 3px 10px #777;}
+.gk_popup_wrap{padding:18px; overflow:hidden; background:#fff; color:#808080!important;-moz-border-radius:4px 4px;-webkit-border-radius:4px 4px;}
+.gk_popup_wrap a{color:#3C6C8A;}
+.gk_popup_wrap a:hover{text-decoration:underline}
+.gk_hide{height:28px; position:absolute; right:0; margin:-32px 0 0 0; z-index:100; display:none; margin-right:40px !important;}
+.gk_popup-hide{display:none; padding:12px 0 0; width:60px!important; line-height:28px; white-space:nowrap}
+.gk_popup_wrap .popup_col{float:left; width:auto; margin:0 0 0 20px}
+.gk_popup_content .popup_col:first-child{float:left; margin:0}
+.gk_popup_wrap td{white-space:nowrap}
+#gk-tools>div>a{padding-left:10px;}
+
+.btn_tools a:hover{border-left:none}
+.gk_popup .gk_popup_close {background:url("../images/popup_close.png") no-repeat scroll 0 top transparent;cursor:pointer;float:right;height:24px;margin:3px 0 0;width:24px;text-indent:-999em;position:relative;top:-16px;right:-13px}
+.gk_popup .gk_popup_close:hover{background-position:right top;}
+
+
+/*
+ * Gavick News Pro GK1 ------------------------------------------------------------------------
+ */
+
+.nsp_main{ overflow:hidden; }
+.nsp_bottom_interface,
+.nsp_top_interface{ overflow:hidden; margin:5px 0; }
+.nsp_bottom_interface div,
+.nsp_top_interface div{ float:right; }
+	.nsp_bottom_interface .pagination,
+	.nsp_top_interface .pagination{ list-style-type:none; margin:0; padding:0; float:left; }
+	.nsp_bottom_interface .pagination li,
+	.nsp_top_interface .pagination li{ float:left; cursor:pointer; text-indent:-999em; width:16px; height:16px; background:#ddd; margin-right:2px; border-radius:2px 2px; -moz-border-radius:2px 2px; -webkit-border-radius:2px 2px; }
+	.nsp_bottom_interface .pagination li:hover,
+	.nsp_bottom_interface .pagination li.active,
+	.nsp_top_interface .pagination li:hover,
+	.nsp_top_interface .pagination li.active{ background:#444; }
+	.nsp_bottom_interface .prev,
+	.nsp_top_interface .prev{ background:url("../images/style1/button_bg.png") repeat-x scroll 0 0 #A2BB4E !important; color:#fff; padding:1px 5px;}
+	.nsp_bottom_interface .prev:hover,
+	.nsp_top_interface .prev:hover{ background:url("../images/style1/button_bg.png") repeat-x scroll 0 bottom #A2BB4E !important; color:#fff;}
+	.nsp_bottom_interface .next,
+	.nsp_top_interface .next{ background:url("../images/style1/button_bg.png") repeat-x scroll 0 0 #A2BB4E !important; color:#fff; padding:1px 5px;}
+	.nsp_bottom_interface .next:hover,
+	.nsp_top_interface .next:hover{ background:url("../images/style1/button_bg.png") repeat-x scroll 0 bottom #A2BB4E !important; color:#fff;}
+	.nsp_bottom_interface .counter,
+	.nsp_top_interface .counter{ background:#ddd; color:#444; padding:1px 3px; cursor:pointer; border-radius:2px 2px; -moz-border-radius:2px 2px; -webkit-border-radius:2px 2px; font-size:9px; float:left; margin:0 0 0 3px; }
+	.nsp_bottom_interface .counter span,
+	.nsp_top_interface .counter span{}
+	.nsp_bottom_interface .counter strong,
+	.nsp_top_interface .counter strong{}
+	
+.nsp_arts{ overflow:hidden; }
+.nsp_art{float:left;}
+.nsp_art div{padding:0 10px;} /* here you can put padding for your articles content */
+.nsp_art h4.nsp_header{width:100%;}
+	
+
+.nsp_art h4.nsp_header a{line-height:31px; color:#3C6C8A;font-size:17px;font-weight:normal;}
+.nsp_art h4.nsp_header a:hover{color:#F19120}
+.nsp_art img.nsp_image{margin:10px !important; border:none; padding: 5px; -moz-box-shadow: 0px 0px 10px #999; -webkit-box-shadow: 0px 0px 10px #999;}
+.nsp_art p.nsp_text{float:left;margin:auto;text-align:justify;width:92%;}
+	
+	
+.nsp_art p.nsp_text a{}
+.nsp_art p.nsp_text a:hover{}
+.nsp_art p.nsp_info{font-size:90%}
+.nsp_art p.nsp_info a{color:#F19120}
+.nsp_art p.nsp_info a:hover{color:#999}
+		
+.nsp_art .tleft{ text-align:left; }
+.nsp_art .tright{ text-align:right; }
+.nsp_art .tcenter{ text-align:center; }
+.nsp_art .tjustify{ text-align:justify; }
+
+.nsp_art .fleft{float:left;}
+.nsp_art .fright{float:right; margin-right:30px;}
+.nsp_art .fnone{ clear:both;width:100%;float:none; }
+
+.readon_class.left,
+.readon_class.right,
+.readon_class.center{clear:both;}
+	
+.readon_class.left{float:left;}
+.readon_class.right{float:right;}
+.readon_class.center{display:inline;float:none;}
+	
+.nsp_avatar{}
+
+.nsp_links{}
+.nsp_links ul{padding:0;margin:0;list-style-type:none;}
+.nsp_links ul li{}
+.nsp_links ul li:hover{}
+.nsp_links ul li h4{}
+.nsp_links ul li h4 a{}
+.nsp_links ul li h4 a:hover{}
+.nsp_links ul li p{}
+
+
+
+/*
+ * Image Show - template style ------------------------------------------------------------------
+ */
+ 
+.gk_is_wrapper-style1{overflow:hidden; position:relative; background:#fff}
+.gk_is_wrapper-style1 .gk_is_image{display:block; position:relative; overflow:hidden}
+.gk_is_wrapper-style1 .gk_is_preloader{width:100%; height:100%; position:absolute; z-index:60; top:0; left:0; background:#fff url('../images/loader.gif') no-repeat center center}
+.gk_is_wrapper-style1 .gk_is_slide{position:absolute; left:0; top:0}
+.gk_is_prev, 
+.gk_is_next{width:34px; background:transparent url('../images/interface.png') no-repeat 0 0; height:32px; position:absolute; z-index:50; cursor:pointer; text-indent:-999em; margin:0}
+.gk_is_prev{background-position:0 -66px!important}
+.gk_is_next{background-position:0 -34px!important; margin:0 0 0 36px}
+.gk_is_text_block{line-height:1.9em}
+
+/* GK Tab 
+---------------------------------------------------------------*/
+.clearfix-tabs{
+	clear: both;
+}
+.gk_tab_item_space{
+	padding:0;
+}
+div.gk_tab-style1 {
+	position: relative;
+}
+div.gk_tab_wrap-style1 {
+	margin: 0 auto;
+}
+ul.gk_tab_ul-style1 {
+	list-style-type: none;
+	margin:0 0 40px 0;
+	padding:0;
+	list-style-image:none!important;
+	overflow:hidden;
+}
+ul.gk_tab_ul-style1 li{
+	text-align:center;
+}
+div.gk_tab_container0-style1 {
+	clear: both;
+}
+div.gk_tab_container1-style1 {
+	overflow: hidden;
+}
+div.gk_tab_item-style1 {
+	float: left;
+	overflow: hidden;
+	padding: 0;
+}
+div.gk_tab_item-style1 h4.gk_tab_news_header {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 8px 0;
+}
+div.gk_tab_item-style1 p.gk_tab_news_text{
+	font-size: 12px;
+}
+div.gk_tab_item-style1 img.gk_tab_news_image{
+	padding: 2px;
+}
+ul.gk_tab_ul-style1 li{
+	float: left;
+	cursor: pointer;
+	border: none!important;
+	padding:8px 0 0 0!important;
+	font-size:13px;
+	margin:0 0 0 14px!important;
+	font-weight:bold;
+}
+ul.gk_tab_ul-style1 li:first-child{
+	margin:0!important;
+}
+ul.gk_tab_ul-style1 li span{
+	display:block;
+	line-height:normal;
+}
+ul.gk_tab_ul-style1 li span{
+	padding:0 0 0 5px;
+	margin:0;
+}
+ul.gk_tab_ul-style1 li span span{
+	padding:0 0 5px 0;
+	margin:0;
+}
+ul.gk_tab_ul-style1 li span span span{
+	padding:0 0 0 5px;
+	margin:0 0 0 -5px;
+}
+ul.gk_tab_ul-style1 li span span span span{
+	padding:4px 30px 0 25px;
+	margin:0;
+}
+ul.gk_tab_ul-style1 li.active{
+	padding:8px 0px 0px 5px!important;
+	margin:0;
+}
+ul.gk_tab_ul-style1 li.active span{
+	padding:0 0 5px 0;
+	margin:0;	
+}
+ul.gk_tab_ul-style1 li.active span span{
+	padding:0 0 0 5px;
+	margin:0 0 0 -5px;
+}
+ul.gk_tab_ul-style1 li.active span span span{
+	padding:5px 30px 0 25px;
+	margin:0 0 0 0;
+}
+ul.gk_tab_ul-style1 li.active span span span span{
+	margin:-13px 0 0 0;
+	padding:12px 0 0 0;
+}
+
+
+.gk_tab_item_space{
+	color:#fff;
+}
+div.gk_tab_item-style1 p.gk_tab_news_text{
+	color:#fff;
+}
+div.gk_tab_item-style1 p.gk_tab_news_info{
+	color:#fff;
+}
+ul.gk_tab_ul-style1 li{
+	color:#fff;
+}
+
+ul.gk_tab_ul-style1 li span{
+	background:transparent url('../images/style1/gk_stuff/tab_2.png') no-repeat left bottom;
+}
+ul.gk_tab_ul-style1 li span span{
+	background:transparent url('../images/style1/gk_stuff/tab_3.png') no-repeat right bottom;
+}
+ul.gk_tab_ul-style1 li span span span{
+	background:transparent url('../images/style1/gk_stuff/tab_1.png') no-repeat left top;
+}
+ul.gk_tab_ul-style1 li span span span span{
+	background:transparent url('../images/style1/gk_stuff/tab_4.png') no-repeat right top;
+	width:130px;
+}
+ul.gk_tab_ul-style1 li.active{
+	background:transparent url('../images/style1/gk_stuff/atab_2.png') no-repeat left bottom;
+}
+ul.gk_tab_ul-style1 li.active span{
+	background:transparent url('../images/style1/gk_stuff/atab_3.png') no-repeat right bottom;	
+}
+ul.gk_tab_ul-style1 li.active span span{
+	background:transparent url('../images/style1/gk_stuff/atab_1.png') no-repeat left top;
+}
+ul.gk_tab_ul-style1 li.active span span span{
+	background:transparent url('../images/style1/gk_stuff/atab_4.png') no-repeat right top;
+}
+ul.gk_tab_ul-style1 li.active span span span span{
+	background:transparent url('../images/style1/gk_stuff/atab_top.png') no-repeat center top;
+}
+
+
+
+/*
+ * JComments - Latest Comments Module ------------------------------------------------------------------
+ */
+ul.jclist li, 
+ul.jclist_color1 li, 
+ul.jclist_color2 li, 
+ul.jclist_color3 li{border:1px dotted #ccc!important; background:#fff; margin-bottom:12px; padding:12px; font-size:90%; color:#999; margin-left:0 !important}
+ul.jclist img, 
+ul.jclist_color1 img, 
+ul.jclist_color2 img, 
+ul.jclist_color3 img{float:right; margin-left:6px; background:#fff; border-color:#F2F2F2 #F2F2F2 #D8D8D8; border-style:solid; border-width:1px; height:auto; padding:3px; width:42px}
+.jcl_comment{font-size:110%; color:#666}
+.jcl_objtitle{font-size:100%; background:#4A729F; padding:1px 4px; color:#fff!important}
+.jcl_date{font-size:90%; color:#222}
+/* 
+ * Module restrictions ----------------------------------------------------------------------------------------
+ */
+ 
+/* line from 741 */
+ul.jclist_color1 li{border:1px dotted #333!important; background:#000; color:#666}
+ul.jclist_color1 img{background:#000; border-color:#333}
+ul.jclist_color1 .jcl_comment{color:#999}
+ul.jclist_color2 li{border:1px dotted #5F80A5 !important; background:#304A67; color:#C1DDFC}
+ul.jclist_color2 img{background:#304A67; border-color:#436284}
+ul.jclist_color2 .jcl_comment{color:#fff}
+ul.jclist_color3 li{background:#f9f9f9}
+
+#gk-subnav ul ul ul{
+    display:none!important;
+}

@@ -1,0 +1,86 @@
+﻿/*
+#------------------------------------------------------------------------
+# elvesocial - July 2010 UPDATE - ver. 2.0.2  (for Joomla 1.5)
+#
+# Copyright (C) 2007-2010 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com   
+#------------------------------------------------------------------------ 
+# Based on T3 Framework
+#------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - GNU/GPL, http://www.gnu.org/copyleft/gpl.html
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites: http://www.joomlart.com - http://www.joomlancers.com
+#------------------------------------------------------------------------
+*/
+
+/* MAIN LAYOUT DIVS
+--------------------------------------------------------- */
+.wrap { width: 100%; clear: both; }
+.main { width: 996px; max-width: 1200px; margin: 0 auto; position: relative;}
+.static { position: static; }
+.column { overflow: hidden; float: left; }
+.gk-mass { clear: both; /*margin-bottom:4px;*/ }
+/* Gutter ---*/
+.main .inner {/* We use liquid layout, so we need to insert a div which will create margin if need */ padding:10px; }
+.main .inner.ctop{padding-top:0; }
+.main .inner.cbottom{ padding-bottom:0; }
+.main .inner.cleft{	padding-left:0; }
+.main .inner.cright{ padding-right:0; }
+
+/* for side columns and spotlight, we only need to add margin or padding to Module
+.column div.gk-moduletable, .column div.moduletable, .column div.gk-module, .column div.module { 
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.gk-inset2 div.gk-moduletable, .gk-inset2 .div.moduletable, .gk-inset2 div.gk-module, .gk-inset2 div.module {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+.gk-inset1 div.gk-moduletable, .gk-inset1 .div.moduletable, .gk-inset1 div.gk-module, .gk-inset1 div.module {
+	margin-right: 20px;
+	margin-left: 0;
+}*/
+
+.article_column .contentpaneopen { /* for article columns, we only need to add margin or padding to this div  */ padding-left: 10px; padding-right: 10px; }
+.leading { }
+.article_row { /* minus the spacing of the article row to macth with the Gutter & global grid */ margin-left: -10px; margin-right: -10px; }
+
+/* MAIN COLUMN
+--------------------------------------------------------- */
+#gk-mainbody { float: left; }
+#gk-current-content, #gk-main { float: right; }
+/* SIDE COLUMNS
+--------------------------------------------------------- */
+.gk-colswrap {}
+.gk-col {}
+/* Left Column ---*/
+#gk-left .gk-l2 .gk-left1, #gk-left .gk-l2 .gk-left2 { width: 50%; }
+#gk-left .gk-l1 .gk-col { width: 100%; }
+/* Right Column ---*/
+#gk-right { float: right; }
+#gk-right .gk-r2 .gk-right1, #gk-right .gk-r2 .gk-right2 { width: 50%; }
+#gk-right .gk-r1 .gk-col { width: 100%; }
+/* HEADER
+--------------------------------------------------------- */
+#gk-header {}
+/* FOOTER
+--------------------------------------------------------- */
+#gk-footer { clear: both; }
+/* CONTENT'S GRIDS
+--------------------------------------------------------- */
+.article_column { float: left; position: relative; }
+.cols1 .article_column { width: 100%; }
+.cols2 .article_column { width: 50%; }
+.cols3 .article_column { width: 33.33%; }
+.cols4 .article_column { width: 25%; }
+.cols5 .article_column { width: 20%; }
+/* SPOTLIGHT
+--------------------------------------------------------- */
+#gk-topsl {}
+#gk-botsl {}
+.gk-box { float: left; overflow: hidden; }

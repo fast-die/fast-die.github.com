@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/components/com_jcomments/tpl/default/style.css?v=12" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Полезные статьи</title>
+		<description>Таблетка Fast Die: как гарантированно покончить с собой. Легкий способ уйти из жизни!</description>
+		<link>http://fast-die.kiev.ua/articles.html</link>
+		<lastBuildDate>Tue, 13 Nov 2012 10:55:11 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<language>ru-ru</language>
+		<item>
+			<title>Как завязать петлю для повешения</title>
+			<link>http://fast-die.kiev.ua/articles/3-how-to-tie-a-loop-for-hanging.html</link>
+			<guid>http://fast-die.kiev.ua/articles/3-how-to-tie-a-loop-for-hanging.html</guid>
+			<description><![CDATA[<p><img src="http://fast-die.kiev.ua/images/stories/hangingloop.jpg" border="0" alt="Затягивающаяся удавка" title="Как завязать петлю для повешения" /></p>]]></description>
+			<author>alex.lysenko@mail.ru (Тех. поддержка)</author>
+			<category>Полезные статьи</category>
+			<pubDate>Mon, 14 Feb 2011 15:07:17 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

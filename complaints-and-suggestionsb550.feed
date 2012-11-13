@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/components/com_jcomments/tpl/default/style.css?v=12" type="text/css"?>
+<feed xmlns="http://www.w3.org/2005/Atom"  xml:lang="ru-ru">
+	<title type="text">Книга жалоб и предложений</title>
+	<subtitle type="text">Таблетка Fast Die: как гарантированно покончить с собой. Легкий способ уйти из жизни!</subtitle>
+	<link rel="alternate" type="text/html" href="http://fast-die.kiev.ua"/>
+	<id>http://fast-die.kiev.ua/complaints-and-suggestions.feed</id>
+	<updated>2012-11-13T10:55:37Z</updated>
+	<generator uri="http://joomla.org" version="1.5">Joomla! 1.5 - Open Source Content Management</generator>
+<link rel="self" type="application/atom+xml" href="http://fast-die.kiev.ua/complaints-and-suggestions.feed?type=atom" />
+	<entry>
+		<title>Максим Владимирович</title>
+		<link rel="alternate" type="text/html" href="http://fast-die.kiev.ua/complaints-and-suggestions/20-maksim.html"/>
+		<published>2011-03-07T11:12:03Z</published>
+		<updated>2011-03-07T11:12:03Z</updated>
+		<id>http://fast-die.kiev.ua/complaints-and-suggestions/20-maksim.html</id>
+		<author>
+			<name>Тех. поддержка</name>
+		<email>alex.lysenko@mail.ru</email>
+		</author>
+		<summary type="html">&lt;p&gt;1. Таблетки реально шлешь?&lt;br /&gt;1.1 Состав таблеток Плацебо или Бутулин?&lt;br /&gt;2. Опция доставка по странам СНГ?&lt;br /&gt;2.1 Траблы с таможней?&lt;br /&gt;3. Сайт социально ориентирован на толпу, но нужна заточка на маргинальнодепрессивного обывателя в экзистенциальном кризисе. Т.е. Юмор не уместен (При условии что ты реально хочешь продавать таблетки по штуке $ штучка)&lt;br /&gt;Напиши второй сайт.&lt;br /&gt;Убери радостного старпера (на главной) Нафотошопь бабушку (в темных тона) с улыбкой Монна Лизы и одухотворенными глазками. В открытой ладони которой сияющая талбетка.&lt;br /&gt;Прост кагбэ не серьезно делать рекламу эвтаназии, а на сцылке радостный старпер.&lt;br /&gt;И в общем-то эт сугубо мое мнение, даже не претендующее на истину. Тебе виднее.&lt;br /&gt;Счастья в твое сердце.&lt;br /&gt;&lt;br /&gt;С уважением,&lt;br /&gt;Максим Владимирович{jcomments on}&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;1. Таблетки реально шлешь?&lt;br /&gt;1.1 Состав таблеток Плацебо или Бутулин?&lt;br /&gt;2. Опция доставка по странам СНГ?&lt;br /&gt;2.1 Траблы с таможней?&lt;br /&gt;3. Сайт социально ориентирован на толпу, но нужна заточка на маргинальнодепрессивного обывателя в экзистенциальном кризисе. Т.е. Юмор не уместен (При условии что ты реально хочешь продавать таблетки по штуке $ штучка)&lt;br /&gt;Напиши второй сайт.&lt;br /&gt;Убери радостного старпера (на главной) Нафотошопь бабушку (в темных тона) с улыбкой Монна Лизы и одухотворенными глазками. В открытой ладони которой сияющая талбетка.&lt;br /&gt;Прост кагбэ не серьезно делать рекламу эвтаназии, а на сцылке радостный старпер.&lt;br /&gt;И в общем-то эт сугубо мое мнение, даже не претендующее на истину. Тебе виднее.&lt;br /&gt;Счастья в твое сердце.&lt;br /&gt;&lt;br /&gt;С уважением,&lt;br /&gt;Максим Владимирович{jcomments on}&lt;/p&gt;</content>
+	</entry>
+	<entry>
+		<title>&quot;Готы навсегда&quot;</title>
+		<link rel="alternate" type="text/html" href="http://fast-die.kiev.ua/complaints-and-suggestions/19-goti-navsegda.html"/>
+		<published>2011-02-18T13:43:07Z</published>
+		<updated>2011-02-18T13:43:07Z</updated>
+		<id>http://fast-die.kiev.ua/complaints-and-suggestions/19-goti-navsegda.html</id>
+		<author>
+			<name>Тех. поддержка</name>
+		<email>alex.lysenko@mail.ru</email>
+		</author>
+		<summary type="html">&lt;p&gt;Разве можно так богохульствовать! Я из организации &quot;Готы навсегда&quot;, мы в шоке! смерть это праздник, и у каждого наступает в зависимости от степени грехов! Ну а никак от ваших ерундовых таблеток! Мы найдём ваc!!!! И Месть будет страшной!!!!!!{jcomments on}&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;Разве можно так богохульствовать! Я из организации &quot;Готы навсегда&quot;, мы в шоке! смерть это праздник, и у каждого наступает в зависимости от степени грехов! Ну а никак от ваших ерундовых таблеток! Мы найдём ваc!!!! И Месть будет страшной!!!!!!{jcomments on}&lt;/p&gt;</content>
+	</entry>
+</feed>
